@@ -3,8 +3,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-dental.jpg";
-import doctor1Image from "@/assets/doctor1.jpg";
-import doctor2Image from "@/assets/doctor2.jpg";
+import drGetimaImage from "@/assets/dr-geetima-khanna.jpg";
+import drVikramImage from "@/assets/dr-vikram-khanna.jpg";
+import drBalramImage from "@/assets/dr-balram-bhargava.jpg";
 import { 
   Shield, 
   Smile, 
@@ -42,18 +43,18 @@ const Home = () => {
 
   const doctors = [
     {
-      name: "Dr. Rajesh Bhargava",
-      specialization: "Chief Dental Surgeon",
-      image: doctor1Image,
-      bio: "With over 15 years of experience in dentistry, Dr. Rajesh specializes in general and cosmetic dentistry. He is known for his gentle approach and commitment to patient comfort.",
-      education: "BDS, MDS (Oral Surgery)"
+      name: "Dr. Vikram Khanna",
+      specialization: "Implantologist",
+      image: drVikramImage,
+      bio: "Dr. Vikram Khanna is a highly skilled implantologist with extensive experience in dental implants and advanced oral surgery. He is committed to providing the highest quality care using cutting-edge technology.",
+      education: "BDS, MDS (Oral & Maxillofacial Surgery)"
     },
     {
-      name: "Dr. Priya Sharma",
-      specialization: "Orthodontist",
-      image: doctor2Image,
-      bio: "Dr. Priya is an expert in orthodontics with 10 years of experience. She specializes in braces, aligners, and jaw alignment treatments for patients of all ages.",
-      education: "BDS, MDS (Orthodontics)"
+      name: "Dr. Geetima Khanna",
+      specialization: "Paedodontist",
+      image: drGetimaImage,
+      bio: "Dr. Geetima Khanna specializes in pediatric dentistry with a gentle approach that makes children feel comfortable. She is dedicated to ensuring optimal oral health for young patients.",
+      education: "BDS, MDS (Paediatric Dentistry)"
     }
   ];
 
@@ -73,8 +74,11 @@ const Home = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Bhargava Dental Care
           </h1>
+          <p className="text-lg md:text-xl mb-2 text-primary-foreground/80 font-medium">
+            Estd. 1985
+          </p>
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90">
-            Your smile is our priority. Expert dental care with compassion and innovation.
+            A multispecialty and multidisciplinary dental clinic situated in the heart of Noida, NCR.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
@@ -176,19 +180,40 @@ const Home = () => {
             <h2 className="text-4xl font-bold text-foreground mb-6">
               About Bhargava Dental Care
             </h2>
+            
+            {/* Founder Memorial */}
+            <div className="mb-12 p-6 bg-background rounded-lg shadow-card">
+              <div className="flex flex-col md:flex-row items-center gap-6">
+                <img 
+                  src={drBalramImage} 
+                  alt="Late Dr. Balram Bhargava"
+                  className="w-32 h-32 rounded-full object-cover border-4 border-primary/20"
+                />
+                <div className="text-left">
+                  <h3 className="text-2xl font-bold text-foreground mb-2">Late Dr. Balram Bhargava</h3>
+                  <p className="text-primary font-semibold mb-2">Founder & Chief Dental Surgeon</p>
+                  <p className="text-muted-foreground leading-relaxed">
+                    Dr. Balram Bhargava founded this clinic in 1985 with a vision to provide comprehensive dental care to the community. 
+                    His dedication to excellence and patient comfort laid the foundation for what Bhargava Dental Care represents today. 
+                    His legacy continues through our commitment to quality care and compassionate service.
+                  </p>
+                </div>
+              </div>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-4">
                   <Award className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">15+ Years</h3>
-                <p className="text-muted-foreground">Of Excellence</p>
+                <h3 className="text-xl font-semibold mb-2">39+ Years</h3>
+                <p className="text-muted-foreground">Of Excellence (Since 1985)</p>
               </div>
               <div className="text-center">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-trust-green rounded-full mb-4">
                   <Users className="w-8 h-8 text-primary-foreground" />
                 </div>
-                <h3 className="text-xl font-semibold mb-2">5000+</h3>
+                <h3 className="text-xl font-semibold mb-2">10,000+</h3>
                 <p className="text-muted-foreground">Happy Patients</p>
               </div>
               <div className="text-center">
@@ -200,8 +225,42 @@ const Home = () => {
               </div>
             </div>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              At Bhargava Dental Care, we are committed to providing exceptional dental care in a comfortable and welcoming environment. Our team of experienced professionals uses the latest technology and techniques to ensure you receive the best possible treatment. We believe that everyone deserves a healthy, beautiful smile, and we're here to help you achieve it.
+              At Bhargava Dental Care, we are committed to providing exceptional dental care in a comfortable and welcoming environment. 
+              Located in Sector 29, Noida, our multispecialty and multidisciplinary clinic has been serving the NCR community since 1985. 
+              Our team of experienced professionals uses the latest technology and techniques to ensure you receive the best possible treatment.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Clinic Timings Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-foreground mb-6">
+              Clinic Timings
+            </h2>
+            <div className="bg-primary/10 rounded-lg p-8">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-semibold text-foreground mb-4">Tuesday to Sunday</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-background rounded-lg p-4 shadow-card">
+                    <h4 className="font-semibold text-primary mb-2">Morning</h4>
+                    <p className="text-2xl font-bold text-foreground">10:00 AM - 2:00 PM</p>
+                  </div>
+                  <div className="bg-background rounded-lg p-4 shadow-card">
+                    <h4 className="font-semibold text-primary mb-2">Evening</h4>
+                    <p className="text-2xl font-bold text-foreground">5:00 PM - 9:00 PM</p>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="bg-red-100 border border-red-300 rounded-lg p-4">
+                  <h4 className="font-semibold text-red-800 mb-1">Monday</h4>
+                  <p className="text-red-600 font-medium">Weekly Off</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

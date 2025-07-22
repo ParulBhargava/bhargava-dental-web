@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import GoogleMap from "@/components/GoogleMap";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
@@ -21,18 +22,17 @@ const Contact = () => {
       icon: MapPin,
       title: "Visit Our Clinic",
       details: [
-        "123 Dental Street",
-        "Medical District, City 560001",
-        "Karnataka, India"
+        "706, Ward 8, Sector 29",
+        "Noida, Uttar Pradesh",
+        "India"
       ]
     },
     {
       icon: Phone,
       title: "Call Us",
       details: [
-        "+91 98765 43210",
-        "+91 80 2345 6789",
-        "Emergency: +91 98765 00000"
+        "+91 9818032955",
+        "+91 1204374921"
       ]
     },
     {
@@ -48,16 +48,17 @@ const Contact = () => {
       icon: Clock,
       title: "Clinic Hours",
       details: [
-        "Mon - Fri: 9:00 AM - 8:00 PM",
-        "Saturday: 9:00 AM - 6:00 PM",
-        "Sunday: 10:00 AM - 4:00 PM"
+        "Tuesday - Sunday:",
+        "10:00 AM - 2:00 PM",
+        "5:00 PM - 9:00 PM",
+        "Monday: Closed"
       ]
     }
   ];
 
   const achievements = [
-    { icon: Award, number: "15+", text: "Years of Excellence" },
-    { icon: Users, number: "5000+", text: "Happy Patients" },
+    { icon: Award, number: "39+", text: "Years of Excellence (Since 1985)" },
+    { icon: Users, number: "10,000+", text: "Happy Patients" },
     { icon: Star, number: "4.9/5", text: "Patient Rating" },
     { icon: CheckCircle, number: "100%", text: "Success Rate" }
   ];
@@ -205,7 +206,7 @@ const Contact = () => {
               About Bhargava Dental Care
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Dedicated to providing exceptional dental care with compassion, expertise, and state-of-the-art technology.
+              A multispecialty and multidisciplinary dental clinic serving Noida, NCR since 1985 with compassion, expertise, and state-of-the-art technology.
             </p>
           </div>
 
@@ -215,14 +216,14 @@ const Contact = () => {
                 Our Mission
               </h3>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                At Bhargava Dental Care, our mission is to provide comprehensive, high-quality dental care in a comfortable and welcoming environment. We believe that everyone deserves a healthy, beautiful smile, and we're committed to helping our patients achieve optimal oral health through personalized treatment plans and compassionate care.
+                Established in 1985 by Late Dr. Balram Bhargava, our clinic has been providing comprehensive, high-quality dental care in a comfortable and welcoming environment for nearly four decades. We believe that everyone deserves a healthy, beautiful smile, and we're committed to helping our patients achieve optimal oral health through personalized treatment plans and compassionate care.
               </p>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Our team of experienced dental professionals stays current with the latest advancements in dental technology and techniques to ensure our patients receive the most effective and comfortable treatments available.
+                Located in the heart of Noida, NCR, our multispecialty and multidisciplinary clinic continues the founder's legacy with experienced dental professionals who stay current with the latest advancements in dental technology and techniques.
               </p>
               <div className="flex items-center space-x-2 text-trust-green">
                 <Shield className="w-6 h-6" />
-                <span className="font-semibold">Trusted by families for over 15 years</span>
+                <span className="font-semibold">Trusted by families for over 39 years</span>
               </div>
             </div>
             <div className="grid grid-cols-2 gap-6">
@@ -292,6 +293,21 @@ const Contact = () => {
               ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Location Section */}
+      <section className="py-16 bg-medical-light/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-foreground mb-4">
+              Visit Our Clinic
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Located in the heart of Noida, NCR. Easily accessible with ample parking facilities.
+            </p>
+          </div>
+          <GoogleMap />
         </div>
       </section>
 

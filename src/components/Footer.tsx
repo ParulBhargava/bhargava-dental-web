@@ -12,14 +12,17 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-sm">123 Dental Street</p>
-                  <p className="text-sm">Medical District, City 560001</p>
-                  <p className="text-sm">Karnataka, India</p>
+                  <p className="text-sm">706, Ward 8, Sector 29</p>
+                  <p className="text-sm">Noida, Uttar Pradesh</p>
+                  <p className="text-sm">India</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5" />
-                <p className="text-sm">+91 98765 43210</p>
+                <div className="text-sm">
+                  <p>+91 9818032955</p>
+                  <p>+91 1204374921</p>
+                </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5" />
@@ -35,9 +38,10 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Clock className="w-5 h-5" />
                 <div className="text-sm">
-                  <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
-                  <p>Saturday: 9:00 AM - 6:00 PM</p>
-                  <p>Sunday: 10:00 AM - 4:00 PM</p>
+                  <p>Tuesday - Sunday:</p>
+                  <p>10:00 AM - 2:00 PM</p>
+                  <p>5:00 PM - 9:00 PM</p>
+                  <p className="text-red-300 mt-1">Monday: Closed</p>
                 </div>
               </div>
             </div>
@@ -58,14 +62,14 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-sm text-primary-foreground/80">
-              Providing quality dental care for families with compassion and expertise.
+              A multispecialty and multidisciplinary dental clinic serving Noida, NCR since 1985.
             </p>
           </div>
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-sm text-primary-foreground/80">
-            © 2024 Bhargava Dental Care. All rights reserved.
+            © 2024 Bhargava Dental Care. All rights reserved. | Estd. 1985
           </p>
         </div>
       </div>
