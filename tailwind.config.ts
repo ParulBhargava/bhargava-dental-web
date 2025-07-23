@@ -57,6 +57,8 @@ export default {
 				'medical-light': 'hsl(var(--medical-light))',
 				'trust-green': 'hsl(var(--trust-green))',
 				'warm-gray': 'hsl(var(--warm-gray))',
+				'clinic-warm': 'hsl(var(--clinic-warm))',
+				'clinic-warm-dark': 'hsl(var(--clinic-warm-dark))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -72,6 +74,9 @@ export default {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			boxShadow: {
+				gentle: '0 2px 8px -2px rgba(140, 189, 161, 0.3), 0 1px 3px -1px rgba(140, 189, 161, 0.2)',
 			},
 			keyframes: {
 				'accordion-down': {
