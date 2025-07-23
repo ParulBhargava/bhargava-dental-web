@@ -39,9 +39,7 @@ const Contact = () => {
       icon: Mail,
       title: "Email Us",
       details: [
-        "info@bhargavadentalcare.com",
-        "appointments@bhargavadentalcare.com",
-        "emergency@bhargavadentalcare.com"
+        "bhargavadentalcare@gmail.com"
       ]
     },
     {
@@ -126,74 +124,13 @@ const Contact = () => {
             ))}
           </div>
 
-          {/* Contact Form */}
-          <div className="max-w-2xl mx-auto">
-            <Card className="border-0 shadow-card">
-              <CardHeader>
-                <CardTitle className="text-2xl text-center">
-                  Send Us a Message
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">
-                        First Name
-                      </label>
-                      <input 
-                        type="text" 
-                        className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary"
-                        placeholder="Your first name"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium text-foreground mb-2">
-                        Last Name
-                      </label>
-                      <input 
-                        type="text" 
-                        className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary"
-                        placeholder="Your last name"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Email Address
-                    </label>
-                    <input 
-                      type="email" 
-                      className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="your.email@example.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Phone Number
-                    </label>
-                    <input 
-                      type="tel" 
-                      className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="+91 98765 43210"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Message
-                    </label>
-                    <textarea 
-                      rows={5}
-                      className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="Tell us about your dental needs or questions..."
-                    ></textarea>
-                  </div>
-                  <Button className="w-full" size="lg">
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+          {/* Clinic Image */}
+          <div className="max-w-4xl mx-auto mb-16">
+            <img 
+              src="/src/assets/hero-dental.jpg" 
+              alt="Bhargava Dental Care Clinic" 
+              className="w-full h-64 md:h-80 object-cover rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </section>
